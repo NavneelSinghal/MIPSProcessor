@@ -1,0 +1,18 @@
+mips assembly code to calculate 2*a+b using non leaf procedure, where a=5,b=10
+
+addi $a0 $zero 0x05
+addi $a1 $zero 0x0A
+jal 0x04
+0000000000000000000
+addi $sp $sp 0xFFFD
+sw $a0 0x0($sp)
+sw $a1 0x1($sp)
+sw $ra 0x2($sp)
+jal 0x0E
+lw $a1 0x1($sp)
+lw $ra 0x2($sp)
+addi $sp $sp 0x03
+add $v0 $v0 $a1
+jr $ra
+sll $v0 $a0 0x01
+jr $ra

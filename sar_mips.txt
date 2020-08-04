@@ -1,0 +1,22 @@
+addi t0 zero 1
+sub t1 zero t0
+addi t2 zero 0
+blez t1 8
+addi s0 s0 1
+addi s1 s1 1
+bgtz t0 10
+addi s0 s0 1
+addi s1 s1 1
+beq t2 zero 5
+addi s0 s0 1
+addi s1 s1 1
+bne t0 zero -7
+addi s0 s0 1
+addi s1 s1 1
+jr ra
+addi s0 s0 1
+jal 9
+addi s0 s0 1
+add s0 s0 s1
+END
+END_INSTRUCTIONS

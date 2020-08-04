@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Feb 20 14:44:30 2020
+# Process ID: 10881
+# Current directory: /home/btech/cs1180360/COL216/Assignments/a5_submission
+# Command line: vivado
+# Log file: /home/btech/cs1180360/COL216/Assignments/a5_submission/vivado.log
+# Journal file: /home/btech/cs1180360/COL216/Assignments/a5_submission/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/btech/cs1180360/COL216/Assignments/a456/a4.xpr
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1

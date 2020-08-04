@@ -1,0 +1,19 @@
+addi $a0 $zero 5
+jal 3
+END
+addi $sp $sp -8
+sw $ra 4 $sp
+sw $a0 0 $sp
+bgtz $a0 3
+addi $v0 $zero 0
+addi $sp $sp 8
+jr $ra
+addi $a0 $a0 -1
+jal 3
+lw $a0 0 $sp
+lw $ra 4 $sp
+addi $sp $sp 8
+add $v0 $a0 $v0
+jr $ra
+END
+END_INSTRUCTIONS

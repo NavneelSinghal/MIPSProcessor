@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Feb 20 14:44:30 2020
+# Process ID: 10881
+# Current directory: /home/btech/cs1180360/COL216/Assignments/a5_submission
+# Command line: vivado
+# Log file: /home/btech/cs1180360/COL216/Assignments/a5_submission/vivado.log
+# Journal file: /home/btech/cs1180360/COL216/Assignments/a5_submission/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/btech/cs1180360/COL216/Assignments/a456/a4.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/btech/cs1180360/COL216/Assignments/a456/a4.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is already up-to-date
+[Thu Feb 20 14:45:01 2020] Launched impl_1...
+Run output will be captured here: /home/btech/cs1180360/COL216/Assignments/a456/a4.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/btech/cs1180360/COL216/Assignments/a456/a4.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is already up-to-date
+[Thu Feb 20 14:45:34 2020] Launched impl_1...
+Run output will be captured here: /home/btech/cs1180360/COL216/Assignments/a456/a4.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/btech/cs1180360/COL216/Assignments/a456/a4.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is already up-to-date
+[Thu Feb 20 14:46:12 2020] Launched impl_1...
+Run output will be captured here: /home/btech/cs1180360/COL216/Assignments/a456/a4.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/btech/cs1180360/COL216/Assignments/a456/a4.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is already up-to-date
+INFO: [HDL 9-1061] Parsing VHDL file "/home/btech/cs1180360/COL216/Assignments/a456/a4.srcs/sources_1/imports/1_2018CS10360_2018CS10436/processor.vhd" into library xil_defaultlib [/home/btech/cs1180360/COL216/Assignments/a456/a4.srcs/sources_1/imports/1_2018CS10360_2018CS10436/processor.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/btech/cs1180360/COL216/Assignments/a456/a4.srcs/sources_1/imports/a4/seven.vhd" into library xil_defaultlib [/home/btech/cs1180360/COL216/Assignments/a456/a4.srcs/sources_1/imports/a4/seven.vhd:1]
+[Thu Feb 20 14:46:29 2020] Launched synth_1...
+Run output will be captured here: /home/btech/cs1180360/COL216/Assignments/a456/a4.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/btech/cs1180360/COL216/Assignments/a456/a4.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is already up-to-date
+[Thu Feb 20 14:47:27 2020] Launched impl_1...
+Run output will be captured here: /home/btech/cs1180360/COL216/Assignments/a456/a4.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/btech/cs1180360/COL216/Assignments/a456/a4.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is already up-to-date
+[Thu Feb 20 14:48:29 2020] Launched impl_1...
+Run output will be captured here: /home/btech/cs1180360/COL216/Assignments/a456/a4.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 20 14:53:42 2020...
